@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <title>Savings Calculator</title>
+</html>
+<head>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+  </style>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-xs-10 form content is_showing">
+        <h2>How Much Money Could You Save?</h2>
+        <form method="post" class="my_form">
+          <div class="left">
+            <h3 class="prompt">How many employees do you employ?</h3>
+            <input type="number" min="1" name="employees" class="number_field"/>
+            <h3 class="prompt">How much do you pay each employee per hour?</h3>
+            <input type="number" min="1" name="salary" class="number_field"/>
+            <h3 class="prompt">How how many hours does each employee work per day?</h3>
+            <input type="number" min="1" name="salary" class="number_field special"/>
+          </div>
+          <br />
+          <button class="button first" id="submitt">Submit</button>
+        </form>
+      </div>
+
+      <div class="col-md-6 col-xs-10 results content">
+        <h2>Your Savings</h2>
+        <h3 class="header">Weekly Savings</h3>
+        <h3 class="cwp txt"></h3>
+        <h3 class="owp txt"></h3>
+        <div class="divider"></div>
+        <h3 class="swp txt"></h3>
+        <h3 class="header">Monthly Savings</h3>
+        <h3 class="cmp txt"></h3>
+        <h3 class="omp txt"></h3>
+        <div class="divider"></div>
+        <h3 class="smp txt"></h3>
+        <h3 class="header">Annual Savings</h3>
+        <h3 class="cap txt"></h3>
+        <h3 class="oap txt"></h3>
+        <div class="divider"></div>
+        <h3 class="sap txt"></h3>
+        <!-- <button class="button second">Change Input</button> -->
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="magic.js"></script>
+</body>
