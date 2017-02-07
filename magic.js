@@ -7,17 +7,17 @@ $('.button.first').on('click', function(e){
     $arr2[i] = field.value;
   });
 
-  $cwp = $arr2[0] * $arr2[1] * $arr2[2] * 7;
-  $cmp = $arr2[0] * $arr2[1] * $arr2[2] * 30;
-  $cap = $arr2[0] * $arr2[1] * $arr2[2] * 365;
+  $cwp = ($arr2[0] * $arr2[1] * $arr2[2] * 7).toFixed(2);
+  $cmp = ($arr2[0] * $arr2[1] * $arr2[2] * 30).toFixed(2);
+  $cap = ($arr2[0] * $arr2[1] * $arr2[2] * 365).toFixed(2);
 
-  $owp = $arr2[0] * $arr2[1] * $arr2[2] * 7 / 2 ;
-  $omp = $arr2[0] * $arr2[1] * $arr2[2] * 30 / 2;
-  $oap = $arr2[0] * $arr2[1] * $arr2[2] * 365 / 2;
+  $owp = ($arr2[0] * $arr2[1] * $arr2[2] * 7 / 2).toFixed(2) ;
+  $omp = ($arr2[0] * $arr2[1] * $arr2[2] * 30 / 2).toFixed(2);
+  $oap = ($arr2[0] * $arr2[1] * $arr2[2] * 365 / 2).toFixed(2);
 
-  $swp = $cwp - $owp;
-  $smp = $cmp - $omp;
-  $sap = $cap - $oap;
+  $swp = ($cwp - $owp).toFixed(2);
+  $smp = ($cmp - $omp).toFixed(2);
+  $sap = ($cap - $oap).toFixed(2);
 
   setTimeout(function(){
     $('.cwp').html("You pay: $" + $cwp);
