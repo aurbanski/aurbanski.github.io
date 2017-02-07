@@ -7,7 +7,7 @@ $('.button.first').on('click', function(e){
     $arr2[i] = field.value;
   });
 
-  $cwp = ($arr2[0] * $arr2[1] * $arr2[2] * 7).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+  $cwp = (parseFloat(($arr2[0] * $arr2[1] * $arr2[2] * 7))).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
   $cmp = ($arr2[0] * $arr2[1] * $arr2[2] * 30).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
   $cap = ($arr2[0] * $arr2[1] * $arr2[2] * 365).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
 
