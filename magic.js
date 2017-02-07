@@ -20,15 +20,15 @@ $('.button.first').on('click', function(e){
   $sap = ($cap - $oap);
 
   setTimeout(function(){
-    $('.cwp').html("You pay: $" + $cwp);
-    $('.owp').html("Our cost: $" + $owp);
-    $('.swp').html("Potential Savings: $" + $swp);
-    $('.cmp').html("You pay: $" + $cmp);
-    $('.omp').html("Our cost: $" + $omp);
-    $('.smp').html("Potential Savings: $" + $smp);
-    $('.cap').html("You pay: $" + $cap);
-    $('.oap').html("Our cost: $" + $oap);
-    $('.sap').html("Potential Savings: $" + $sap);
+    $('.cwp').html("You pay: $" + $cwp.toFixed(2));
+    $('.owp').html("Our cost: $" + $owp.toFixed(2));
+    $('.swp').html("Potential Savings: $" + $swp.toFixed(2));
+    $('.cmp').html("You pay: $" + $cmp.toFixed(2));
+    $('.omp').html("Our cost: $" + $omp.toFixed(2));
+    $('.smp').html("Potential Savings: $" + $smp.toFixed(2));
+    $('.cap').html("You pay: $" + $cap.toFixed(2));
+    $('.oap').html("Our cost: $" + $oap.toFixed(2));
+    $('.sap').html("Potential Savings: $" + $sap.toFixed(2));
     $('.form').removeClass('is_showing');
     $('.results').addClass('animate_in');
   }, 300);
